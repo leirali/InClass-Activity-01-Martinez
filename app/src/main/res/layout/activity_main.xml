@@ -11,27 +11,30 @@
     tools:context="com.wordpress.myulaflaga.inclass_activity_01_martinez.MainActivity">
 
 
-    <DatePicker
-        android:id="@+id/datePicker01"
+    <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:spinnersShown="true"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/ratingBar2"
+        android:progress="75" />
 
-    <TimePicker
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timePicker"
-        android:layout_above="@+id/datePicker01"
-        android:layout_marginBottom="24dp"
-        android:layout_alignRight="@+id/datePicker01"
-        android:layout_alignEnd="@+id/datePicker01"
-        android:layout_alignLeft="@+id/datePicker01"
-        android:layout_alignStart="@+id/datePicker01"
-        style="@android:style/Widget.Holo.Light.TimePicker" />
+        android:layout_marginTop="156dp"
+        android:id="@+id/progressBar3"
+        android:clickable="false"
+        android:max="100"
+        android:progress="75"
+        android:maxHeight="50dip"
+        android:maxWidth="75dip"
+        android:minHeight="123dp"
+        android:minWidth="200dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
